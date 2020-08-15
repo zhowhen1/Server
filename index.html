@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <script> onpageshow  =  
+    function() {    
+      var ss  =  new Array("https://player.bilibili.com/player.html?aid=17449594&cid=28502384&page=1&as_wide=1&high_quality=1&danmaku=0&t=5", "https://player.bilibili.com/player.html?aid=22628197&cid=120428279&page=1&as_wide=1&high_quality=1&danmaku=0&t=1", "https://player.bilibili.com/player.html?aid=540692691&cid=192377166&page=1&as_wide=1&high_quality=1&danmaku=0&t=1", "https://player.bilibili.com/player.html?aid=84648811&cid=144773995&page=1&as_wide=1&high_quality=1&danmaku=0&t=21");  
+      var num  =  parseInt(Math.random()  *  ss.length);  document.getElementById("videolink").src = ss[num] 
+    }</script>
   
   <head>
     <meta charset="utf-8">
@@ -27,17 +32,32 @@
                       </div>
                     </header>
                     <article class="article" id="article">
-                      <h3>温馨提示</h3><p><span style="color: rgb(255, 0, 0);font-size:30px;">2.1版本作废，3.x版本更新中，由于工作量较大，需要一定时间，这里列出部分，目前进度：登陆yes,提取码查询yes,BUG修复yes,远程下载,第三方云解析，HTML。。不会写awsl</span></p>                     
-                      <video src="https://gss3.baidu.com/6LZ0ej3k1Qd3ote6lo7D0j9wehsv/tieba-smallvideo-transcode/3523019_2d120981f5158f65287ef9bc7015eba6_3.mp4" controls="controls" style="width:100%" autoplay="autoplay" __idm_id__="935606273">您的浏览器不支持 video 标签。</video>
-                      <h3>功能介绍</h3><p>可直接通过替换单个文件来修复PanDownload。</p><p>实现(加密)脚本下发</p><p>调整PanDownload的线程数至128，平时推荐8-16即可，超过16极大可能导致封号！</p><p>与其他软件不同，采用重载PanDownload的方式来处理，以后更好接管相应功能</p><p>支持lua与本程序通信，通信端口不固定。</p><h3>使用方法</h3><p>一、下载相应压缩包</p>二、确认杀软没有删除解压出来的内容</p><p>三、双击运行PanDownload.exe即可</p><p>四、若出现错误，可去tg群详谈</p><p>Telegram群地址：<a href="https://t.me/pandown" target="_blank" textvalue="https://t.me/pandown">https://t.me/pandown</a></p><h3>更新日志</h3><p>2.0版本继续作为框架，测试可行性，欢迎反馈BUG</p><p>2.0版本之后可能会不定时更新</p>
+                      <div style="position: relative; padding: 30% 45%;">
+                        <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" id="videolink"></iframe>
+                      </div>
+                      <h3>功能介绍</h3>
+                      <p>可直接通过替换单个文件来修复PanDownload。</p>
+                      <p>实现(加密)脚本下发</p>
+                      <p>调整PanDownload的线程数至128，平时推荐8-16即可，超过16极大可能导致封号！</p>
+                      <p>与其他软件不同，采用重载PanDownload的方式来处理，以后更好接管相应功能</p>
+                      <p>支持lua与本程序通信，通信端口不固定。</p>
+                      <h3>使用方法</h3>
+                      <p>一、下载相应压缩包</p>二、确认杀软没有删除解压出来的内容</p>
+                      <p>三、双击运行PanDownload.exe即可</p>
+                      <p>四、若出现错误，可去tg群详谈</p>
+                      <p>Telegram群地址：
+                        <a href="https://t.me/pandown" target="_blank" textvalue="https://t.me/pandown">https://t.me/pandown</a></p>
+                      <h3>更新日志</h3>
+                      <p>3.0版本作为正式版，欢迎反馈BUG</p>
+                      <p>3.0版本之后可能会不定时更新</p>
                       <h3>下载地址</h3>
-					  <p>解压密码：123</p>
+                      <p>解压密码：123</p>
                       <p>
-                        <a href="https:\\cdn.jsdelivr.net\gh\PanDownloadServer\Server\PanDownloadLBW2.1.zip" target="_blank" textvalue="https:\\cdn.jsdelivr.net\gh\PanDownloadServer\Server\PanDownloadLBW2.1.zip">CDN地址1</a></p>
-					  <p>
-                        <a href="https:\\kurukurumi.tk\PanDownloadLBW2.1.zip" target="_blank" textvalue="https:\\kurukurumi.tk\PanDownloadLBW2.1.zip">CDN地址2</a></p>
-					  <p>
-                        <a href="https://github.com/PanDownloadServer/Server/blob/master/PanDownloadLBW2.1.zip" target="_blank" textvalue="https://github.com/PanDownloadServer/Server/blob/master/PanDownloadLBW2.1.zip">原始地址</a></p>
+                        <a href="https:\\cdn.jsdelivr.net\gh\PanDownloadServer\Server\PanDownloadLBW3.0.zip" target="_blank" textvalue="https:\\cdn.jsdelivr.net\gh\PanDownloadServer\Server\PanDownloadLBW3.0.zip">CDN地址1</a></p>
+                      <p>
+                        <a href="https:\\kurukurumi.tk\PanDownloadLBW3.0.zip" target="_blank" textvalue="https:\\kurukurumi.tk\PanDownloadLBW3.0.zip">CDN地址2</a></p>
+                      <p>
+                        <a href="https:\\github.com\PanDownloadServer\Server\blob\master\PanDownloadLBW3.0.zip" target="_blank" textvalue="https:\\github.com\PanDownloadServer\Server\blob\master\PanDownloadLBW3.0.zip">原始地址</a></p>
                     </article>
                   </section>
                 </main>
@@ -47,7 +67,8 @@
         </div>
       </main>
     </div>
-    <script type="text/javascript" color="0,104,183" opacity="1" zindex="-1" count="100" src="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/Scripts/line.js"></script>
+    <button type="button" class="btn btn-info btn-sm canvas-close" style="position: fixed; right: 0px; bottom: 0px; z-index: 200;">不再显示canvas背景</button>
+    <script type="text/javascript" color="0,104,183" opacity="1" zindex="-1" count="100" src="/Scripts/line.js"></script>
     <canvas id="c_n15" width="563" height="739" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 1;"></canvas>
     <canvas id="c_n19" width="824" height="706" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 1;"></canvas>
     <div class="layui-layer-move" style="cursor: move; display: none;"></div>
