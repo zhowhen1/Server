@@ -2,12 +2,13 @@
 <html lang="zh-CN">
   <script> onpageshow  =  
     function() {    
-      var ss  =  new Array("https://player.bilibili.com/player.html?aid=17449594&cid=28502384&page=1&as_wide=1&high_quality=1&danmaku=0&t=5", "https://player.bilibili.com/player.html?aid=22628197&cid=120428279&page=1&as_wide=1&high_quality=1&danmaku=0&t=1", "https://player.bilibili.com/player.html?aid=540692691&cid=192377166&page=1&as_wide=1&high_quality=1&danmaku=0&t=1", "https://player.bilibili.com/player.html?aid=84648811&cid=144773995&page=1&as_wide=1&high_quality=1&danmaku=0&t=21");  
+      var ss  =  new Array("https://player.bilibili.com/player.html?aid=17449594&cid=28502384&page=1&as_wide=1&high_quality=1&danmaku=0&t=5", "https://player.bilibili.com/player.html?aid=22628197&cid=120428279&page=1&as_wide=1&high_quality=1&danmaku=0&t=1", "https://player.bilibili.com/player.html?aid=540692691&cid=192377166&page=1&as_wide=1&high_quality=1&danmaku=0&t=1", "https://player.bilibili.com/player.html?aid=796823656&cid=225313294&page=1&as_wide=1&high_quality=1&danmaku=0&t=24");  
       var num  =  parseInt(Math.random()  *  ss.length);  document.getElementById("videolink").src = ss[num] 
     }</script>
   
   <head>
     <meta charset="utf-8">
+    <title>KuruKuruMi~</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/bundles/main.vraODx5hYf-DdzL9Ux5Z6Kmv9go-Dd1ofX_oEDjA4wRs.js"></script>
   </head>
   
-  <body>
+  <body onload="InitLive2D()">
     <div class="header">
       <main class="cd-main-content">
         <div class="container">
@@ -32,7 +33,8 @@
                       </div>
                     </header>
                     <article class="article" id="article">
-					<p><span style="font-size:30px;">Chrome的无痕模式是看不到视频的哦！</p>
+                      <p>
+                        <span style="font-size:30px;">Chrome的无痕模式是看不到视频的哦！</p>
                       <div style="position: relative; padding: 30% 45%;">
                         <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="" frameborder="no" scrolling="no" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" id="videolink"></iframe>
                       </div>
@@ -49,22 +51,28 @@
                       <p>Telegram群地址：
                         <a href="https://t.me/pandown" target="_blank" textvalue="https://t.me/pandown">https://t.me/pandown</a></p>
                       <h3>更新日志</h3>
-                      <p>3.1版本作为正式版，欢迎反馈BUG</p>
-                      <p>3.1版本之后可能会不定时更新</p>
-					  <h3>注意事项</h3>
-					  <p>webkit核心，node.dll使用PCS通道下载，或者去github下载也行</p>
-					  <p>使用时将node.dll放到pandownload.exe同目录即可</p>
+                      <p>3.2版本在2020年8月18日更新，作为正式版，欢迎反馈BUG</p>
+                      <p>3.2版本之后可能会不定时更新</p>
+                      <p>3.2版本修复中文用户名登陆问题</p>
+                      <p>3.2版本修复下载时多线程导致lua调用失败的问题</p>
+                      <h3>注意事项</h3>
+                      <p>webkit核心，node.dll使用PCS通道下载，或者去github下载也行</p>
+                      <p>使用时将node.dll放到pandownload.exe同目录即可</p>
+                      <p>伞兵一号通道：被限速账号使用，会有点加速效果</p>
+                      <p>伞兵二号通道：未被限速账号使用，不支持远程下载</p>
+                      <p>伞兵三号通道：未被限速账号使用，支持远程下载</p>
+                      <p>使用时将node.dll放到pandownload.exe同目录即可</p>
                       <h3>下载地址</h3>
                       <p>解压密码：123</p>
                       <p>
-                        <a href="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/PanDownloadLBW3.1.zip" target="_blank" textvalue="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/PanDownloadLBW3.1.zip">CDN地址1</a></p>
+                        <a href="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/PanDownloadLBW3.2.zip" target="_blank" textvalue="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/PanDownloadLBW3.2.zip">CDN地址1</a></p>
                       <p>
-                        <a href="https://kurukurumi.tk/PanDownloadLBW3.1.zip" target="_blank" textvalue="https://kurukurumi.tk/PanDownloadLBW3.1.zip">CDN地址2</a></p>
+                        <a href="https://kurukurumi.tk/PanDownloadLBW3.2.zip" target="_blank" textvalue="https://kurukurumi.tk/PanDownloadLBW3.2.zip">CDN地址2</a></p>
                       <p>
-                        <a href="https://github.com/PanDownloadServer/Server/blob/master/PanDownloadLBW3.1.zip" target="_blank" textvalue="https://github.com/PanDownloadServer/Server/blob/master/PanDownloadLBW3.1.zip">原始地址</a></p>
-						<p>
+                        <a href="https://github.com/PanDownloadServer/Server/blob/master/PanDownloadLBW3.2.zip" target="_blank" textvalue="https://github.com/PanDownloadServer/Server/blob/master/PanDownloadLBW3.2.zip">原始地址</a></p>
+                      <p>
                         <a href="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/node.dll" target="_blank" textvalue="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/node.dll">node.dll下载地址1</a></p>
-						<p>
+                      <p>
                         <a href="https://github.com/PanDownloadServer/Server/blob/master/node.dll" target="_blank" textvalue="https://github.com/PanDownloadServer/Server/blob/master/node.dll">node.dll下载地址2</a></p>
                     </article>
                   </section>
@@ -77,9 +85,94 @@
     </div>
     <button type="button" class="btn btn-info btn-sm canvas-close" style="position: fixed; right: 0px; bottom: 0px; z-index: 200;">不再显示canvas背景</button>
     <script type="text/javascript" color="0,104,183" opacity="1" zindex="-1" count="100" src="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/Scripts/line.js"></script>
-    <canvas id="c_n15" width="563" height="739" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 1;"></canvas>
-    <canvas id="c_n19" width="824" height="706" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 1;"></canvas>
     <div class="layui-layer-move" style="cursor: move; display: none;"></div>
+    <!-- Live2D Library -->
+    <audio id="my_audio"></audio>
+    <p>
+    </p>
+    <div>
+      <canvas id="mycanvas" width="300" height="486" style="position:fixed; bottom:0; right:0; z-index:999;"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/PanDownloadServer/Server/Scripts/live2d.min.js"></script>
+    <script>var LAppDefine = {
+        // 调试，true时会在console里显示日志
+        DEBUG_LOG: false,
+        DEBUG_MOUSE_LOG: false,
+        // 鼠标相关日志   
+        //  全部设定    
+        //这里配置canvsa元素的id
+        CANVAS_ID: "mycanvas",
+        //是否开启滚轮缩放，默认true
+        IS_SCROLL_SCALE: false,
+        // 画面最大缩放级别
+        VIEW_MAX_SCALE: 2,
+        // 画面最小缩放级别
+        VIEW_MIN_SCALE: 0.8,
+
+        VIEW_LOGICAL_LEFT: -1,
+        VIEW_LOGICAL_RIGHT: 1,
+
+        VIEW_LOGICAL_MAX_LEFT: -2,
+        VIEW_LOGICAL_MAX_RIGHT: 2,
+        VIEW_LOGICAL_MAX_BOTTOM: -2,
+        VIEW_LOGICAL_MAX_TOP: 2,
+
+        // 动作优先级常量
+        PRIORITY_NONE: 0,
+        PRIORITY_IDLE: 1,
+        PRIORITY_NORMAL: 2,
+        PRIORITY_FORCE: 3,
+
+        //是否绑定切换模型按钮
+        IS_BIND_BUTTON: false,
+        //绑定按钮元素id
+        BUTTON_ID: "Change",
+        //是否开启模型切换完成之前禁止按钮点击的选项，默认为true
+        IS_BAN_BUTTON: true,
+        //设置按钮禁止状态时的class，可自定义样式，前提是IS_BAN_BUTTON为true
+        BAN_BUTTON_CLASS: "inactive",
+        //设置按钮正常状态时的class
+        NORMAL_BUTTON_CLASS: "active",
+        //衣服切换模式 目前只支持两种 sequence-顺序 random-随机
+        //需事先配置好json文件里的textures属性
+        //暂不支持保存功能
+        TEXURE_CHANGE_MODE: "sequence",
+        IS_START_TEXURE_CHANGE: false,
+        TEXURE_BUTTON_ID: "",
+        /**
+                 *  模型定义
+                    自定义配置模型，同一数组内放置两个模型则为开启双模型
+                    三模型也只取数组里的前两个
+                    模型出现的顺序与数组一致
+                    这里请用相对路径配置
+                */
+        MODELS: [["model/sagiri/sagiri.model.json"]],
+
+        // 与外部定义的json文件匹配
+        MOTION_GROUP_IDLE: "idle",
+        // 空闲时
+        MOTION_GROUP_TAP_BODY: "tap_body",
+        // 点击身体时
+        MOTION_GROUP_FLICK_HEAD: "flick_head",
+        // 抚摸头部
+        MOTION_GROUP_PINCH_IN: "pinch_in",
+        // 放大时
+        MOTION_GROUP_PINCH_OUT: "pinch_out",
+        // 缩小时
+        MOTION_GROUP_SHAKE: "shake",
+        // 摇晃
+        //如果有自定义的动作分组可以放在这里
+        // 与外部定义json文件相匹配
+        HIT_AREA_HEAD: "head",
+        HIT_AREA_BODY: "body",
+
+        //初始化的模型大小
+        SCALE: 0.91,
+        //新增属性，是否播放音频 默认为true
+        IS_PLAY_AUDIO: true,
+        //新增属性，audio标签id值   
+        AUDIO_ID: "my_audio"
+      };</script>
   </body>
 
 </html>
